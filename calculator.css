@@ -114,12 +114,13 @@ a:visited {
   outline: none !important;
 }
 
+/*
 #history {
-  /*transform: translate(-13px, -17px);*/
+  /*transform: translate(-13px, -17px);
   position: relative;
   height: 10px;
   bottom: 17px;
   margin-right: 14px;
   color: #8b8b7b;
   font-size: 12px;
-}
+}/*
