@@ -2,35 +2,50 @@
 
 //Our aim is to make our html and css calculator work.
 
+document.addEventListener('DOMContentLoaded', function () {
 
-
+//1. Event Listener
 //this event listener goes first. It tells all the files to load all the html content before anymore JavaScript is run.
 
+var answer = ""
+var buttons = document.getElementsByTagName("button");
 
-//2. For each button, add an onclick event addEventListener
-//3. Print out value of button
-//document.AddEventListener  - document is referring to the html document.
-//document.getElementsByTagName("button") - anything with the tag name button will be selected, so <button></button>. You could use ElementsByClassName also.
+//2. For each button, add an onclick event addEventListener. This works by attaching a listener to the button 'tags' in the html (anything with <button></button>). I could have used 'getElementsByClassName' also. This whole equation is selecting all button elements and saving into a variable with var buttons.
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  //1. Select all button elements and save into a variable with var buttons.
+for (var i = 0; i < buttons.length; i++) {
+  var button = buttons[i]
+button.addEventListener("click", function(e) {
+  answer = answer + e.target.value;
+  console.log(answer)
+}
 
-  var answer = ""
-  var buttons = document.getElementsByTagName("button");
+)}
+
+//3. Value of button
+//Now we want to make something happen when we click on the buttons. At the moment, when each button is clicked it is printing each number on the console. When I click 2, it prints 2. When I click 3, it then prints 23.
+
+//Next:
+
+//1. Print numbers to the console.
+
+
+//2. Make an equation print out when numbers, then x, +, -, etc is selected.
+
+
+
+
+
+
+
+
+
 
 //2. For each button, add an onclick event addEventListener
 //use a for loop if you know how many things you need to loop through. If you didn't know how many elements, you'd use a while loop.
 //e is an event.
 
-  for (var i = 0; i < buttons.length; i++) {
-    var button = buttons[i]
-  button.addEventListener("click", function(e) {
-    answer = answer + e.target.value;
-    console.log(answer)
-  }
 
-)}
 
 
 
