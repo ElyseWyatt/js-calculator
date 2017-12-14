@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 var answer = ""
 var buttons = document.getElementsByTagName("button");
+var operators = ['+','-','x','%'];
+var decimalAdded = false;
 
 //2. For each button, add an onclick event addEventListener. This works by attaching a listener to the button 'tags' in the html (anything with <button></button>). I could have used 'getElementsByClassName' also. This whole equation is selecting all button elements and saving into a variable with var buttons.
 
@@ -24,6 +26,9 @@ button.addEventListener("click", function(e) {
 
 //3. Value of button
 //Now we want to make something happen when we click on the buttons. At the moment, when each button is clicked it is printing each number on the console. When I click 2, it prints 2. When I click 3, it then prints 23.
+
+
+
 
 //Next:
 
